@@ -1,0 +1,26 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JSON to CSV</title>
+</head>
+<body>
+    <p id="heading">JSON to CSV Converter</p>
+    <p class="small"><a href="https://codepen.io/JFarrow/pen/CAwyo" target="_blank">CSV to JSON Converter</a>
+    <hr />
+    <p>Paste Your JSON Here:</p>
+    <textarea id="json" class="text">[{"Id":1,"UserName":"Sam Smith"},
+{"Id":2,"UserName":"Fred Frankly"},
+{"Id":1,"UserName":"Zachary Zupers"}]</textarea>
+    <br />
+    <input id="quote" type="checkbox" checked="true" data-np-checked="1" /> Wrap values in double quotes
+    <br />
+    <input id="labels" type="checkbox" checked="true" data-np-checked="1" /> Include labels in first row
+    <br />
+    <button id="convert">Convert to CSV</button>
+    &nbsp;&nbsp;
+    <button id="download">Download CSV</button>
+    <textarea id="csv" class="text"></textarea>
+    
+    <script src="js/json2csv.js"></script>
+</body>
+</html>
